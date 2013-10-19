@@ -1,10 +1,11 @@
+
   # . create 2d arrays of numbers and their words by decimal place
   # . case based on length of num
 
 def in_words(num)
   ones = [[],[1, "one"], [2, "two"], [3, "three"], [4, "four"], [5, "five"], 
   [6, "six"], [7, "seven"], [8, "eight"], [9, "nine"], [0, ""]]
-  tens = [[],[1, ""], [2, "twenty "], [3, "thirty "], [4, "fourty "], [5, "fifty "], 
+  tens = [[],[1, ""], [2, "twenty "], [3, "thirty "], [4, "forty "], [5, "fifty "], 
   [6, "sixty "], [7, "seventy "], [8, "eighty "], [9, "ninety "], [0, ""]]
   if num == 10
     "ten"
@@ -51,4 +52,4 @@ end
 p in_words(7) == "seven"
 p in_words(18) == "eighteen"
 p in_words(176) == "one hundred seventy six"
-p in_words(2542) == "two thousand five hundred fourty two"
+p in_words(2542) == "two thousand five hundred forty two"
